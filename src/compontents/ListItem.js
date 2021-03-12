@@ -1,17 +1,14 @@
 import { Component } from 'react'
 
 class ListItem extends Component {
-  constructor({text}) {
+  constructor({ text }) {
     super()
     this.text = text
   }
 
   render() {
-
     return (
-      <>
-        <td>{this.text}</td>
-      </>
+      <td>{this.text}</td>
     )
   }
 }

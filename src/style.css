@@ -19,6 +19,15 @@ tr {
   border: 4px solid black;
 }
 
+th {
+  cursor: pointer;
+}
+
+th:hover {
+  background-color: rgba(233, 233, 233);
+  color: rgba(22, 22, 22);
+}
+
 td {
   padding: 10px;
   border: 2px solid black;
