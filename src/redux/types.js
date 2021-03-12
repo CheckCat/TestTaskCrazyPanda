@@ -1,2 +1,2 @@
-export const ADD = "ADD";
-export const EDIT = "EDIT";
+export const FILTER = "FILTER"
+export const UPDATE_TEXTAREA_VALUE = "UPDATE_TEXTAREA_VALUE"

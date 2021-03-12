@@ -1,18 +1,15 @@
 import { Component } from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import {connect} from 'react-redux'
+import { validateData } from './validateData'
 import List from './List'
 import Navbar from './Navbar'
-import LiveSearch from './LiveSearch'
-import data from '../data.json'
 
 class App extends Component {
-  constructor() {
+  constructor({data}) {
     super()
-    this.data = data.reduce((accum, item, index) => {
-      if (!(index % 50)) accum.push([])
-      accum[~~(index / 50)].push(item)
-      return accum
-    }, [])
+    this.data = data
+    console.log(this.data)
   }
 
   getRandomKey() {
@@ -31,10 +28,15 @@ class App extends Component {
               path={`/${index + 1}`} />)
           }
         </Switch>
-        <Navbar data={this.data} getRandomKey={this.getRandomKey} />
+        <Navbar getRandomKey={this.getRandomKey} />
       </BrowserRouter>
     )
   }
 }
 
-export default App;
+const mapStateToProps = ({ data }) => {
+return ({
+  data
+})}
+
+export default connect(mapStateToProps)(App);

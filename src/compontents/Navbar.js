@@ -1,5 +1,6 @@
 import { Component } from 'react'
 import { NavLink } from 'react-router-dom'
+import {connect} from 'react-redux'
 
 class Navbar extends Component {
   constructor({ data, getRandomKey }) {
@@ -17,4 +18,8 @@ class Navbar extends Component {
   }
 }
 
-export default Navbar
+const mapStateToProps = ({data}) => ({
+  data
+})
+
+export default connect(mapStateToProps)(Navbar)
