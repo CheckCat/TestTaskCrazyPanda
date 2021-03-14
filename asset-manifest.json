@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/TestTaskCrazyPanda/static/css/main.e18c81f0.chunk.css",
+    "main.js": "/TestTaskCrazyPanda/static/js/main.cc1aa897.chunk.js",
+    "main.js.map": "/TestTaskCrazyPanda/static/js/main.cc1aa897.chunk.js.map",
+    "runtime-main.js": "/TestTaskCrazyPanda/static/js/runtime-main.91b51cf9.js",
+    "runtime-main.js.map": "/TestTaskCrazyPanda/static/js/runtime-main.91b51cf9.js.map",
+    "static/js/2.3535fc2c.chunk.js": "/TestTaskCrazyPanda/static/js/2.3535fc2c.chunk.js",
+    "static/js/2.3535fc2c.chunk.js.map": "/TestTaskCrazyPanda/static/js/2.3535fc2c.chunk.js.map",
+    "index.html": "/TestTaskCrazyPanda/index.html",
+    "static/css/main.e18c81f0.chunk.css.map": "/TestTaskCrazyPanda/static/css/main.e18c81f0.chunk.css.map",
+    "static/js/2.3535fc2c.chunk.js.LICENSE.txt": "/TestTaskCrazyPanda/static/js/2.3535fc2c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.91b51cf9.js",
+    "static/js/2.3535fc2c.chunk.js",
+    "static/css/main.e18c81f0.chunk.css",
+    "static/js/main.cc1aa897.chunk.js"
+  ]
+}
