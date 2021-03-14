@@ -1,12 +1,10 @@
-import { FILTER, UPDATE_TEXTAREA_VALUE } from './types';
+import { FILTER, UPDATE_INDEX_OF_PAGE } from './types';
 
-export const filter = (data, index) => ({
+export const filter = data => ({
   type: FILTER,
-  newList: data,
-  indexOfPage: index
+  newList: data
 })
 
-export const updateTextareaValue = text => ({
-  type: UPDATE_TEXTAREA_VALUE,
-  text
+export const updateIndexOfPage = () => ({
+  type: UPDATE_INDEX_OF_PAGE
 })

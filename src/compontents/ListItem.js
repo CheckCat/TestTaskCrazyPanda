@@ -1,14 +1,14 @@
 import { Component } from 'react'
 
 class ListItem extends Component {
-  constructor({ text }) {
+  constructor({ textOfCell }) {
     super()
-    this.text = text
+    this.textOfCell = textOfCell
   }
 
   render() {
     return (
-      <td>{this.text}</td>
+      <td>{this.textOfCell}</td>
     )
   }
 }

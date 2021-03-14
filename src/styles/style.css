@@ -11,6 +11,7 @@ h1 {
 
 table {
   margin: 0 auto;
+  width: 60%;
 }
 
 tr {
@@ -47,6 +48,14 @@ ul {
 a {
   text-decoration: none;
   color: black;
+}
+
+textarea {
+  position: fixed;
+  top: 50%;
+  left: 50px;
+  width: 200px;
+  resize: none;
 }
 
 .active {

@@ -1,12 +1,10 @@
 import { Component } from 'react'
 import ListItem from './ListItem'
-import LiveSearch from './LiveSearch'
 
 class List extends Component {
-  constructor({ data }) {
+  constructor({ dataOfPage }) {
     super()
-    this.data = data
-    console.log(this.data)
+    this.dataOfPage = dataOfPage
     this.state = {
       isAscendingOrder: false
     }
@@ -25,23 +23,19 @@ class List extends Component {
   }
 
   render() {
-    const { data, getRandomKey } = this.props
+    const { dataOfPage, getRandomKey } = this.props
 
     return (
-      <>
-        <table>
-          <thead>
-            <tr onClick={() => this.sortingCells(data)}><th>Столбец</th></tr>
-          </thead>
-          <tbody>
-            <tr>
-              {data.map(item => <ListItem key={getRandomKey()} text={item} />)}
-            </tr>
-          </tbody>
-
-        </table>
-        <LiveSearch data={this.data} />
-      </>
+      <table>
+        <thead>
+          <tr onClick={() => this.sortingCells(dataOfPage)}><th>Столбец</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            {dataOfPage.map(item => <ListItem key={getRandomKey()} textOfCell={item} />)}
+          </tr>
+        </tbody>
+      </table>
     )
   }
 }
